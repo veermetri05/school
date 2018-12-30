@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script>
+    // click handler
+    function onClick(event) {
+      var titles = $('input[name^=titles]').map(function(idx, elem) {
+        return $(elem).val();
+      }).get();
+
+      console.log(titles);
+      event.preventDefault();
+    }
+
+    // attach button click listener on dom ready
+    $(function() {
+      $('button').click(onClick);
+    });
+    </script>
+  </head>
+  <body>
+    <input name="titles[]" type="text">
+    <input name="titles[]" type="text">
+    <input name="titles[]" type="text">
+    <input name="titles[]" type="text">
+    <input name="titles[]" type="text">
+    <input name="titles[]" type="text">
+    <input name="titles[]" type="text">
+    <input name="titles[]" type="text">
+    <input name="titles[]" type="text">
+    <input name="titles[]" type="text">
+    ​<button>submit</button>​​​​​​​​​​​​​​​​​​​​​​​
+
+  </body>
+</html>

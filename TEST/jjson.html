@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script >
+$(document).ready(function(){
+  var obj = [["5272","52525"],["fjashfk", "dfasdhg"]] ;
+  var length =  obj[0].length;
+  for (i = 0; i < length ; i++) {
+    $("#info").append('<div class="alert alert-warning">The username&nbsp;'+obj[0][i]+'&nbsp;is taken.</div>');
+  }
+    var length =  obj[1].length;
+  for (i = 0; i < length ; i++) {
+    $("#info").append('<div class="alert alert-warning">The entry number&nbsp;'+obj[1][i]+'&nbsp;is empty.</div>');
+    }
+  });
+</script>
+  </head>
+  <body>
+    <div class="" id="info">
+
+    </div>
+  </body>
+</html>

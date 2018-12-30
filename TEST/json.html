@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+  <body>
+    <input type="text"/>
+<input type="button" id="submit" value="Get Details"/>
+</div>
+<script>
+$(document).ready(function(){
+  $("#submit").click(function(){
+    var txt = $("input").val();
+    $.post("login.php", {usr: usr, pwd: pwd}, function(result){
+      var json = result ;
+      console.log(json);
+      var obj = JSON.parse(json);
+      console.log(obj.success);
+      if (obj.success == 'false') {
+        window.location.href = "index.php";
+      }
+    });
+  });
+});
+</script>
+<span></span>
+    </body>
+</html>
