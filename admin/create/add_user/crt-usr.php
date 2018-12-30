@@ -1,5 +1,5 @@
 <?php
-include_once '../../dbh.php';
+include_once '../../../dbh.php';
 if (isset($_POST['submit'])) {
 $usr = $_POST['usr'];
 $pwd = $_POST['pwd'];

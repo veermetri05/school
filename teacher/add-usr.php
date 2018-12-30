@@ -22,13 +22,13 @@
       } else {
         $c_usr = $user[$x];
         $c_pwd = $pass[$x];
-        $sql = "SELECT * FROM '$class' WHERE usr='$c_usr'" ;
+        $sql = "SELECT * FROM ".$class." WHERE usr='$c_usr'" ;
 					$result = mysqli_query($conn, $sql);
 					$resultCheck = mysqli_num_rows($result);
 					if ($resultCheck > 0) {
             array_push($ar_tk, $x);
 					} else {
-            $sql = "INSERT INTO teacher (usr, pwd) VALUES ('$c_usr', '$c_pwd');";
+            $sql = "INSERT INTO ".$class." (usr, pwd) VALUES ('$c_usr', '$c_pwd');";
             mysqli_query($conn, $sql);
           }
       }

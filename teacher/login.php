@@ -1,5 +1,9 @@
 <?php
 session_start();
+if (isset($_SESSION)) {
+  session_destroy();
+}
+session_start();
 include '../dbh.php';
  if (isset($_POST['submit'])) {
    $usr = $_POST['usr'];

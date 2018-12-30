@@ -1,6 +1,6 @@
 <?php
   if (isset($_POST['submit'])) {
-    include_once '../../dbh.php';
+    include_once '../../../dbh.php';
     print_r ( $_POST['cls']);
     $cls = $_POST['cls'];
     print_r ( $_POST['inc']);

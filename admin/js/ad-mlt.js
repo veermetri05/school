@@ -29,9 +29,16 @@ $(document).ready(function(){
     var usr = $('input[name^=usr]').map(function(idx, elem) {
       return $(elem).val();
     }).get();
-    var pwd = $('input[name^=pwd]').map(function(idx, elem) {
-      return $(elem).val();
-    }).get();
+    if ($('#auto').is(":checked"))
+    {
+      var pwd = usr ;
+      console.log('checked');
+    } else {
+      var pwd = $('input[name^=pwd]').map(function(idx, elem) {
+        return $(elem).val();
+      }).get();
+      console.log('not checked');
+    }
 
     console.log(usr);
     console.log(pwd);

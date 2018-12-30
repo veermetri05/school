@@ -1,5 +1,5 @@
 <?php
-include_once '../../dbh.php';
+include_once '../../../dbh.php';
 $query = $conn->query("SELECT `class` FROM `class`;");
 $class = Array();
 while($result = $query->fetch_assoc()){

@@ -17,7 +17,12 @@
          &nbsp;
        </div>
        <div class="col-sm-4">
-         <a href="crt-stud.html"><button type="button" name="button">Add students</button></a>
+         <?php
+         session_start();
+         if (isset($_SESSION['class'])) {
+           echo '<a href="crt-stud.html"><button type="button" name="button">Add students</button></a>';
+         }
+          ?>
        </div>
        <div class="col-sm-4">
          &nbsp;

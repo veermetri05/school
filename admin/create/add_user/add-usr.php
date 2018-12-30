@@ -1,6 +1,6 @@
 <?php
   if (isset($_POST['submit'])) {
-    include_once '../../dbh.php';
+    include_once '../../../dbh.php';
     $usr = $_POST['usr'] ;
     $pwd = $_POST['pwd'] ;
     //count user
