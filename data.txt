@@ -1,0 +1,30 @@
+class CREATE
+CREATE TABLE class1
+(id int AUTO_INCREMENT NOT NULL PRIMARY KEY, usr varchar(255), pwd varchar(255))
+create complaint
+CREATE TABLE complaint
+(id int AUTO_INCREMENT NOT NULL PRIMARY KEY, from varchar(255), to varchar(255), complaint text, date varchar(255), month varchar(255), year varchar(255))
+create leave request
+CREATE TABLE leave
+(id int AUTO_INCREMENT NOT NULL PRIMARY KEY, from varchar(255), to varchar(255), leave text, date varchar(255), month varchar(255), year varchar(255))
+create periods
+CREATE TABLE periods
+(id int AUTO_INCREMENT NOT NULL PRIMARY KEY,   monday varchar(255), tuesday varchar(255), wednesday varchar(255), thursday varchar(255), friday varchar(255), saturday varchar(255))
+create notice
+CREATE TABLE notice
+(id int AUTO_INCREMENT NOT NULL PRIMARY KEY, notice text, date varchar(255), month varchar(255), year varchar(255))
+create attendance
+CREATE TABLE attendance
+(id int AUTO_INCREMENT NOT NULL PRIMARY KEY, usr varchar(255), absent varchar(255), date varchar(255), month varchar(255), year varchar(255))
+create exam
+CREATE TABLE exam
+(id int AUTO_INCREMENT NOT NULL PRIMARY KEY, date varchar(255), month varchar(255), year varchar(255), subject varchar(255), syllabus varchar(255))
+create marks
+CREATE TABLE marks
+(id int AUTO_INCREMENT NOT NULL PRIMARY KEY, usr varchar(255), subject varchar(255), marks varchar(255), term varchar(255))
+CREATE TABLE homework
+(id int AUTO_INCREMENT NOT NULL PRIMARY KEY, homework text, date varchar(255), month varchar(255), year varchar(255))
+
+
+fiverr
+customer number = 205764162 ------password = Sec275000

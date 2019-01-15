@@ -1,4 +1,4 @@
 <?php
 session_start();
-echo $_SESSION['class'];
+echo $_SESSION['percentage']
  ?>
