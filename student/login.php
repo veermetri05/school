@@ -3,8 +3,9 @@ include '../dbh.php';
  if (isset($_POST['submit'])) {
    $usr = $_POST['usr'];
    $pwd = $_POST['pwd'];
+   $class = 'tables_'.$_POST['class'];
 
-   $sql = "SELECT * FROM student WHERE usr='$usr'";
+   $sql = "SELECT * FROM $class WHERE usr='$usr'";
        $result = mysqli_query($conn, $sql);
        $resultCheck = mysqli_num_rows($result);
 
