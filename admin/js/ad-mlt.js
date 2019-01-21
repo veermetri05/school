@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  var number = 1;
   $("#but").click(function(){
     var number = $("#number").val() ;
     $.post( "add.php", {number: number}, function(result) {

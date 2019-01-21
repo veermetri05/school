@@ -12,9 +12,9 @@ $(document).keypress(function(e) {
              window.location.href = "../dashboard/dashboard.html";
            },
             1500);
+            $("#info").addClass("alert alert-success");
+            $("#info").html("<strong>Success!</strong> Added user successfully");
         }
-        $("#info").addClass("alert alert-success");
-        $("#info").html("<strong>Success!</strong> Added user successfully");
 
         if (obj.success == 'false') {
           $("#info").addClass("alert alert-warning");

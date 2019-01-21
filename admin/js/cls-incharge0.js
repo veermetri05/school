@@ -10,6 +10,10 @@ function execute(){
       console.log(inc);
       $.post("add-incharge0.php", {cls: cls, inc: inc, submit: 'submit'}, function(result){
         console.log(result);
+        var obj = JSON.parse(result);
+        if (obj.success == 'true') {
+          $("#info").html('<div class="alert alert-success">All incharge were assigned to class.</div>');
+        }
       })
 }
 $(document).ready(function(){

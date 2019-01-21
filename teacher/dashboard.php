@@ -21,8 +21,10 @@
          session_start();
          if (isset($_SESSION['class'])) {
            echo '<a href="crt-stud.html"><button type="button" name="button">Add students</button></a>';
+           echo '<a href="complaint"><button type="button" name="button">Complaints</button></a>';
          }
           ?>
+
        </div>
        <div class="col-sm-4">
          &nbsp;

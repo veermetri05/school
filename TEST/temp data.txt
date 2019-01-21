@@ -1,0 +1,2 @@
+
+<div name="nbn" class="alert alert-info" id="abc"><strong>New</strong> <br>'.$row['subject'].'<br>From:<strong>'.$row['from'].'</strong></div>

@@ -6,6 +6,7 @@ while($result = $query->fetch_assoc()){
     $class[] = $result['class'];
 }
 $length = count($class);
+echo '<div id="info"></div>';
 for ($y=0; $y < $length; $y++) {
   $query = $conn->query("SELECT `class` FROM `class`;");
   $class = Array();

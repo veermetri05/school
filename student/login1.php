@@ -18,7 +18,7 @@
               console.log(obj.success);
               if (obj.success == 'true') {
                 setTimeout(function(){
-                   window.location.href = "dashboard.php";
+                   window.location.href = "dashboard.html";
                  },
                   1500);
               }
@@ -39,7 +39,7 @@
           console.log(obj.success);
           if (obj.success == 'true') {
             setTimeout(function(){
-               window.location.href = "dashboard.php";
+               window.location.href = "dashboard.html";
              },
               1500);
           }
@@ -63,7 +63,7 @@
         console.log(obj.success);
         if (obj.success == 'true') {
           setTimeout(function(){
-             window.location.href = "dashboard.php";
+             window.location.href = "dashboard.html";
            },
             1500);
         }
