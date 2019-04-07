@@ -22,6 +22,9 @@
          if (isset($_SESSION['class'])) {
            echo '<a href="crt-stud.html"><button type="button" name="button">Add students</button></a>';
            echo '<a href="complaint"><button type="button" name="button">Complaints</button></a>';
+           echo '<a href="homework"><button type="button" name="button">Homework</button></a>';
+           echo '<a href="leave"><button type="button" name="button">Leave Request</button></a>';
+           echo '<a href="attendance"><button type="button" name="button">Attendance</button></a>';
          }
           ?>
 

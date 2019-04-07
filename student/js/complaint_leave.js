@@ -7,7 +7,7 @@ $("#btn").click(function(){
     var obj = JSON.parse(result);
     if (obj.success == 'true') {
       $("#info").addClass("alert alert-success");
-      $("#info").html("<strong>Success!</strong> Complaint was sent to your class teacher.");
+      $("#info").html("<strong>Success!</strong> Leave Request was sent to your class teacher.");
     }
   });
 });

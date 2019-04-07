@@ -27,6 +27,7 @@ include '../dbh.php';
 
                       					if ($row = mysqli_fetch_assoc($result)){
                                  $_SESSION['class'] = $row['class'] ;
+                                 $_SESSION['incharge_class'] = $row['incharge'] ;
                                }
                $response = array("success"=> 'true');
                $response = json_encode($response);
