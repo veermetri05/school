@@ -30,7 +30,7 @@
 
           if ($result->num_rows > 0) {
               while($row = $result->fetch_assoc()) {
-                echo '<input type="checkbox" class="present" name="'.$row["usr"].'" value="'.$row["usr"].'">'.$row["usr"] ;
+                echo '<input type="checkbox" class="present" name="'.$row["usr"].'" value="'.$row["id"].'">'.$row["usr"] ;
                 echo '<br>';
               }
           } else {

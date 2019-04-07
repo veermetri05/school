@@ -28,12 +28,14 @@ $(document).ready(function(){
       button.innerHTML= 'Re-Submit';
       $(button).click(function(){
         $.post("attendance_teacher.php", {present: chkArray, submit: 'resubmit'}, function(result){
-          console.log(result);
-        })
+          $("#info").attr('class', 'alert alert-success');
+          $("#info").html("<strong>Success!</strong> Your attendance was re-submitted and changed.");
+
+        });
+
       });
       var div1 = document.getElementById("div1");
       div1.appendChild(button);
-      $("#")
     }
   });
 }

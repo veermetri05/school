@@ -6,6 +6,7 @@ if (isset($_POST['submit'])) {
   if (isset($_POST['present'])) {
     if (is_array($_POST['present'])) {
       $present = $_POST['present'] ;
+      //print_r ($present);
     } else {
       $present = array();
     }
@@ -14,21 +15,23 @@ if (isset($_POST['submit'])) {
   }
   $real = array();
   $class = $_SESSION['class'];
-  $sql="SELECT usr FROM tables_$class";
+  $sql="SELECT id FROM tables_$class";
   $result=$conn->query($sql);
   if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
-      array_push($real, $row["usr"]);
+      array_push($real, $row["id"]);
     }
   }
   //$present, $real
   $absent = array_diff($real, $present);
+  //print_r($absent) ;
   $cntabsent = count($absent);
   $tempray = array();
   for ($i=1; $i <= $cntabsent ; $i++) {
     array_push($tempray, $i);
   }
   $result = array_combine($tempray, $absent);
+  //print_r($result);
   $date = date('d');
   $month = date('m');
   $year = date('y');
