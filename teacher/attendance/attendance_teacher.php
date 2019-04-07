@@ -38,12 +38,15 @@ if (isset($_POST['submit'])) {
   $result = mysqli_query($conn, $sql);
   $resultCheck = mysqli_num_rows($result);
   if ($resultCheck < 1) {
+    $sql="INSERT INTO attendance_$class (absent, `date`, month, year) VALUES ('$resut', '$date', '$month', '$year')";
+    mysqli_query($conn, $sql);
     $output = array("success"=>"true", "uploded"=>"true");
     $myJSON = json_encode($output);
     echo $myJSON;
   } else {
     if ($submit == 'resubmit') {
-      $sql="UPDATE attendance_$class SET ";
+      echo "resubmit";
+      $sql="UPDATE attendance_$class SET absent='$resut' WHERE date=$date AND month=$month AND year=$year";
       mysqli_query($conn, $sql);
     } else {
       $output = array("success"=>"false", "uploded"=>"false");
